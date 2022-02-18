@@ -6,7 +6,7 @@ from flask_app.config.my_sequal_connections import connectToMySQL
 from flask_bcrypt import Bcrypt
 bcrypt = Bcrypt(app)
 
-UPLOAD_FOLDER = '/Users/akabigdaddy/Desktop/Users/projects/CookingProjectCopy/flask_app/static/img_uploads'
+UPLOAD_FOLDER = './flask_app/static/img_uploads'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
