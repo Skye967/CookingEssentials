@@ -1,0 +1,48 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+            .container input,label{
+                display: flex;
+                flex-direction: column;
+                Margin: 5px;
+            }
+        
+        
+        </style>
+    </head>
+    <body>
+            <h1>Add Show</h1>
+            <form action="/log_out">
+                <input type="submit" value = "log out">
+            </form>
+            <form action="/">
+                <input type="submit" value = "Tv Shows">
+            </form>
+            <div class="container">
+                {% with messages = get_flashed_messages() %}  
+                    {% if messages %}                            
+                        {% for message in messages %} 
+                                <p style="color: red;">{{message}}</p>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                <form class="input" action="/create_show" method="POST">
+                    <label for="title">Title:</label>
+                    <input type="text" name="title">
+                    <label for="network">Network:</label>
+                    <input type="text" name="network">
+                    <label for="release_date">Release Date:</label>
+                    <input type="date" name="release_date">
+                    <label for="description">Desciption:</label>
+                    <input type="text" name="description">
+                    <input type="submit" value="Add">
+                </form>
+            </div>
+    </body>
+</html>

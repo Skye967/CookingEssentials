@@ -1,0 +1,71 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/dashboard.css">
+    </head>
+    <body>
+        <div class="dashboard_nav">
+            <h1 style="margin-left:20px;">Anyone Can Cook</h1>
+            <div class="dashboard_nav_img">
+            </div>
+            <form style="margin-right:20px;" action="/index">
+                <input class="btn btn-primary" type="submit" value = "Dashboard">
+            </form>
+            <form style="margin-right:20px;" action="/log_out">
+                <input class="btn btn-warning" type="submit" value = "log out">
+            </form>
+        </div>
+        <div class="lesson_nav">
+            <div class="lesson_links">
+                <h3>Meat Lessons</h3>
+                <a href="/meat/chicken">Chicken</a>
+                <a href="/meat/steak">Steak</a>
+                <a href="/meat/pork">Pork</a>
+                <a href="/meat/fish">Fish</a>
+            </div>
+            <div class="lesson_nav_img">
+                <img src="../static/img/chickendinner.jpg">
+                <img src="../static/img/steakdinner.jpg">
+                <img src="../static/img/porkdinner.jpg">
+                <img src="../static/img/fishdinner.jpg">
+            </div>
+        </div>
+    <div class="main_container">
+        <div class="recipe">
+            <h2>Chicken</h2>
+
+            <p>Tips for Pan Seared Chicken</p>
+            <p>You can Butteryfly the chicken breasts or Pound the thicker parts of the chicken breasts with a meat mallet to even out their thickness, this way it cooks evenly.</p>
+            <p>Dab the chicken dry. The drier exterior will encourage browning.</p>
+            <p>Cook in oil so the chicken doesn’t stick. Don’t use too much or it will just splatter all over the place. You can also use a splatter screen to reduce splatter further.</p>
+            <p>Don’t move chicken around as it cooks. You’ll get better browning if you let it sit still and only move once when flipping.</p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/F3ybkJoq6OU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hsFQplEZF90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <p>Ingredients You’ll Need for This Recipe</p>
+            <p>Chicken breasts</p>
+            <p>Olive oil</p>
+            <p>Unsalted butter</p>
+
+            <p>Heat a skillet. Pound thicker parts of chicken to even their thickness.
+                Dab chicken dry. Season both sides of chicken with salt and pepper.</p>
+            <p>Add oil to skillet, then add chicken.</p>
+            <p>Salt and pepper</p>
+            <p>Cook chicken for 4 to 5 minutes Per Side (turning once). Transfer to a plate.</p>
+
+            <form action="/upload/{{6}}" method="post" enctype="multipart/form-data">
+                    <input style="border: 1px solid black;" type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
+                    <input type="submit" value="Upload Image" name="submit">
+                </form>
+         </div>
+    </div>
+            
+    </body>
+</html> 

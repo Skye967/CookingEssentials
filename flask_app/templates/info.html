@@ -1,0 +1,24 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    </head>
+    <body>
+            {% with messages = get_flashed_messages() %}  
+            {% if messages %}                            
+                {% for message in messages %}            
+                    <p style="color: green;">{{message}}</p>                   
+                {% endfor %}
+            {% endif %}
+            {% endwith %}
+        <h1>Email List</h1>
+        {%for email in all_emails%}
+        <p>{{email.ename}}</p>
+        {%endfor%}
+    </body>
+</html>

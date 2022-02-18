@@ -1,0 +1,80 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/dashboard.css">
+    </head>
+    <body>
+        <div class="dashboard_nav">
+            <h1 style="margin-left:20px;">Anyone Can Cook</h1>
+            <div class="dashboard_nav_img">
+            </div>
+            <form style="margin-right:20px;" action="/index">
+                <input class="btn btn-primary" type="submit" value = "Dashboard">
+            </form>
+            <form style="margin-right:20px;" action="/log_out">
+                <input class="btn btn-warning" type="submit" value = "log out">
+            </form>
+        </div>
+        <div class="lesson_nav">
+            <div class="lesson_links">
+                <h3>Vegetable Lessons</h3>
+                <a href="/vegetable/saute">Sauteed Veggies</a>
+                <a href="/vegetable/steam">Boiled Veggies</a>
+            </div>
+            <div class="lesson_nav_img">
+                <img src="../static/img/suateveggie.jpg">
+                <img src="../static/img/plateveggie.jpg">
+                <img src="../static/img/boiledveggie.jpg">
+            </div>
+        </div>
+    <div class="main_container">
+            <div class="recipe">
+                <h2>Boiled Veggies</h2>
+
+                <p>Craving a healthy and hearty salad? Try this easy Boiled Green Vegetables Recipe! If you are a fan of vegetable salads, then you have to try this easy boiled green vegetables recipe. Prepared with cabbage, beans, cauliflower and salt, this plain boiled veggie salad gives you the nutrients without the extra fat. If you are a newbie in the kitchen, you can still nail this super easy boiled green vegetable recipe. This easy, simple vegetarian dish is high on fibre and a great food for summers. This easy and quick recipe can be best served during brunch, dinners and buffet. The best part of this recipe is that you can pair this recipe with steamed or boiled rice for a healthy meal and also serve as a side dish with heavy vegetarian or non vegetarian meals. You can add vegetables of your choice and even ingredients like paneer or tofu.</p><br>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VXDHWCYpHgc?start=73" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+                <p>How to make Boiled Green Vegetables</p>
+
+                <p> Ingredients of Boiled Green Vegetables</p>
+
+                <p>4 Servings</p>
+                <p>4 cup cabbage</p>
+                <p>4 cup cauliflower</p>
+                <p>salt as required</p>
+                <p>4 cup bean</p>
+                <p>4 tablespoon virgin olive oil</p>
+                <p>8 tablespoon lemon juice</p>
+                <p>For Toppings</p>
+                <p>1 carrot</p>
+
+
+                
+                <p>Step 1 Wash and prepare the veggies, Firstly, place cabbage, cauliflower and beans over a chopping board and chop their roots off. Now, wash them under running water and keep them aside.</p>
+
+                <p>Step 2 Chop and boil the veggies
+                Next, place the vegetables again on the chopping board and slice them. Now, add sliced vegetables into the cooker and pour enough water to submerge the vegetables. Boil the sliced vegetables for 7-8 minutes or until tender.</p>
+
+                <p>Step 3 Cover with dressing & serve
+                Once boiled, transfer the boiled vegetables into a large bowl and pour olive oil in it. Mix them well. Garnish the vegetables with the chopped pieces of carrot. Now drizzle lemon juice and sprinkle salt in the bowl. Serve!</p>
+
+                <p>Tips, You can also choose to just blanch the cabbage and green beans while boiling the cauliflower. This will ensure that there is a crunchy element in the salad. Feel free to add more veggies to the salad as per your taste. If you do not want any added fat in your salad, you can skip the olive oil. For the best flavour, you can use sea salt or Himalayan pink salt in the salad.</p>
+
+
+               <form action="/upload/{{14}}" method="post" enctype="multipart/form-data">
+                    <input style="border: 1px solid black;" type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
+                    <input type="submit" value="Upload Image" name="submit">
+                </form>
+                
+            </div>
+    </div>
+            
+    </body>
+</html> 

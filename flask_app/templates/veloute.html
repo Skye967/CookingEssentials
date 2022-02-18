@@ -1,0 +1,93 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/dashboard.css">
+    </head>
+    <body>
+        <div class="dashboard_nav">
+            <h1 style="margin-left:20px;">Anyone Can Cook</h1>
+            <div class="dashboard_nav_img">
+            </div>
+            <form style="margin-right:20px;" action="/index">
+                <input class="btn btn-primary" type="submit" value = "Dashboard">
+            </form>
+            <form style="margin-right:20px;" action="/log_out">
+                <input class="btn btn-warning" type="submit" value = "log out">
+            </form>
+        </div>
+        <div class="lesson_nav">
+            <div class="lesson_links">
+                <h3>Sauce Lessons</h3>
+                <a href="/saucey/veloute">Veloute</a>
+                <a href="/saucey/pansauce">Pan butter sauce</a>
+                <a href="/saucey/tomotoe">Tomatoe</a>
+                <a href="/saucey/balsamic">Balsamic reduction</a>
+                <a href="/saucey/hollandaise">Hollandaise</a>
+            </div>
+            <div class="lesson_nav_img">
+                <img src="../static/img/sauce1.jpg">
+                <img src="../static/img/sauce2.jpg">
+                <img src="../static/img/sauce3.jpg">
+                <img src="../static/img/sauce4.jpg">
+                <img src="../static/img/sauce5.jpg">
+            </div>
+        </div>
+    <div class="main_container">
+            <div class="recipe">
+                <div>
+                    <h2>Veloute</h2>
+                    <p>Velouté (pronounced "vuh-loo-TAY") is one of the five mother sauces of classical French cuisine—béchamel, espagnole, hollandaise, and tomato are the other four. This means velouté is a starting point from which a number of sauces can be made. It's sort of like a blank coloring book that you can color in any way you choose. This doesn't mean that a velouté isn't delicious in itself, but that its flavor will be enhanced and amplified by adding other ingredients. Knowing how to make a good velouté is key to saucing endless dishes. Our easy recipe will give you the keys to expand and experiment with this base sauce, and find which herbs, finishing touches, or additions you like best. From velouté, you can obtain Allemande sauce finished with eggs and cream, and the famous suprême sauce, finished with cream, butter, and lemon juice. Many other creamy sauces come from velouté, and they have varied additions: herbs, wine, shallots, or meat drippings, like gravy. Like béchamel, velouté is considered a white sauce, and both are thickened with roux, a mixture of butter and flour. Whereas béchamel has milk as its base, velouté is made with stock. Since there are three types of white stock—chicken, veal, and fish—there are likewise three types of velouté, but chicken is the most common. Velouté is commonly served alongside chicken or fish; the fish velouté is equally flavorful, and obviously made with fish stock, whereas veal velouté is made with veal stock.</p>
+                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OshP-IwiAI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <p>Ingredients</p>
+                    <p>3 1/2 cups chicken stock</p>
+                    <p>1 ounce clarified butter (about 2 tablespoons)</p>
+                    <p>1 ounce all-purpose flour (about 3 tablespoons)</p>
+                    <p>Steps to Make It</p>
+                    <p>HIDE IMAGES</p>
+                    <p>Gather the ingredients.</p>
+
+                    <p>DIRECTIONS</p>
+                    <p>Bring the chicken stock to a simmer in a medium saucepan. Lower the heat to keep the stock hot.</p>
+
+                    <p>Simmer chicken stock</p>
+
+                    <p>In a separate heavy-bottomed saucepan, melt the clarified butter over medium heat until it becomes frothy. Take care not to let it turn brown, as velouté must be off-white in color. Browning the butter will yield a darker sauce.</p>
+
+                    <p>Melt butter in saucepan until frothy</p>
+
+                    <p>With a wooden spoon, stir the flour into the melted butter a little bit at a time, until it is fully incorporated. The resulting pale yellow-colored paste is called a roux.</p>
+
+                    <p>Stir in flour to butter to make roux</p>
+
+                    <p>Heat the roux for another few minutes or so, until it has turned a light blond color. This helps cook off the raw flour flavor. Don't let the mixture turn brown for the same reason the clarified butter needed to be kept light in color: The sauce must be pale.</p>
+
+                    <p>Heat roux until it's a light color</p>
+
+                    <p>Using a wire whisk, slowly add 3 cups of the hot chicken stock to the roux, whisking vigorously to make sure it's free of lumps. Keep whisking while adding the stock. Reserve the remaining 1/2 cup of stock in case you need to thin out the sauce.</p>
+
+                    <p>Slowly add chicken stock to roux and Simmer, reducing the heat if needed, for about 30 minutes or until the total volume has reduced by about one-half, stirring frequently to make sure the sauce doesn't scorch at the bottom of the pan or form lumps while cooking. Use a ladle to skim off any solids or impurities that might rise to the surface.</p>
+
+                    <p>The sauce should be smooth and velvety. If it's too thick, whisk in a bit more of the remaining hot stock until it's just thick enough to coat the back of a spoon. This technique involves that the sauce has adequate viscosity to coat the back of the utensil without running off it.</p>
+
+                    <p>Once you can coat the back of a spoon, remove the sauce from the heat. For an extra smooth consistency, carefully pour the sauce through a wire mesh strainer lined with a piece of cheesecloth.</p>
+
+                    <form action="/upload/{{15}}" method="post" enctype="multipart/form-data">
+                    <input style="border: 1px solid black;" type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
+                    <input type="submit" value="Upload Image" name="submit">
+                </form>
+
+                </div>
+                
+            </div>
+    </div>
+            
+    </body>
+</html> 

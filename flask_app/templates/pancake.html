@@ -1,0 +1,76 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/dashboard.css">
+    </head>
+    <body>
+        <div class="dashboard_nav">
+            <h1 style="margin-left:20px;">Anyone Can Cook</h1>
+            <div class="dashboard_nav_img">
+            </div>
+            <form style="margin-right:20px;" action="/index">
+                <input class="btn btn-primary" type="submit" value = "Dashboard">
+            </form>
+            <form style="margin-right:20px;" action="/log_out">
+                <input class="btn btn-warning" type="submit" value = "log out">
+            </form>
+        </div>
+        <div class="lesson_nav">
+            <div class="lesson_nav_img">
+                <img src="../static/img/cakeaction.gif">
+                <img src="../static/img/cakemix.jpg">
+                <img src="../static/img/strawberrycake.jpg">
+                <img src="../static/img/cakebatter.jpg">
+                <img src="../static/img/choclatecake.jpg">
+                <img src="../static/img/cakeflip.jpg">
+                <img src="../static/img/bananacake.jpg">
+            </div>
+        </div>
+    <div class="main_container">
+        <div class="recipe">
+            <h2>Pancakes</h2>
+            
+            
+            <p>With pancakes that taste as deliciously soft and comforting as these, we're having breakfast all day long. With a little helping hand, you can have them ready for the weekend. This classic favorite is also a great place for you to show off some creativity.<p><br>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xnfcwTTM6VY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+            <p>Ingredients</p>
+            <p>2 cups  mix</p>
+            <p>1 cup milk</p>
+            <p>2 eggs</p> 
+
+            <p>1. Grease or spray griddle or skillet. Heat over medium-high heat or electric griddle to 375°F. (Surface is ready when a few drops of water sprinkled on it dance and disappear.)</p>
+
+            <p>2. Stir all ingredients until blended. Pour by slightly less than 1/4 cupfuls onto hot griddle.</p>
+
+            <p>3. Cook until edges are dry. Turn; cook until golden.</p>
+
+            <p>Expert Tips</p>
+
+            <p>Cook these cakes on a true cast-iron griddle or in a large cast-iron skillet. Use a 1/4-cup measuring cup to scoop the batter onto the hot pan (it’s ready when a drop of water sizzles on the surface), then don’t turn them until they puff up and bubbles form on top. Flip them just once, cooking until just golden brown.</p>
+
+            <p>Don't flip 'em more than once! Repeated cooking on both sides toughens rather than browns the pancakes.</p>
+            
+            <p>Keep pancakes warm until ready to serve by placing them uncovered in a single layer on a paper towel-lined cookie sheet in a 200°F oven.</p>
+
+            <p>Serve pancakes topped with sliced banana, raspberries, blueberries, or grated chocolate for a delicious way to start your day.</p>
+
+            <p>Freeze leftover pancakes stacked between sheets of waxed paper, then wrapped in foil or a plastic freezer bag. To reheat, unwrap pancakes and remove waxed paper. Place 1 pancake at a time on microwaveable safe plate and microwave on High for 30 to 60 seconds or until heated through. Top with peanut butter mixed with maple syrup to make them on-the-go friendly.</p>
+
+            <form action="/upload/{{5}}" method="post" enctype="multipart/form-data">
+                    <input style="border: 1px solid black;" type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
+                    <input type="submit" value="Upload Image" name="submit">
+                </form>
+
+         </div>
+    </div>
+            
+    </body>
+</html> 

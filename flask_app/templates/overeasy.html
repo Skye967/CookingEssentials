@@ -1,0 +1,83 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/dashboard.css">
+    </head>
+    <body>
+        <div class="dashboard_nav">
+            <h1 style="margin-left:20px;">Anyone Can Cook</h1>
+            <div class="dashboard_nav_img">
+            </div>
+            <form style="margin-right:20px;" action="/index">
+                <input class="btn btn-primary" type="submit" value = "Dashboard">
+            </form>
+            <form style="margin-right:20px;" action="/log_out">
+                <input class="btn btn-warning" type="submit" value = "log out">
+            </form>
+        </div>
+        <div class="lesson_nav">
+            <div class="lesson_links">
+                <h3>Egg Lessons</h3>
+                <a href="/egg/scrambled">Scrambeled</a>
+                <a href="/egg/overeasy">Over Easy</a>
+                <a href="/egg/hardboiled">Boiled</a>
+                <a href="/egg/poached">Poached</a>
+            </div>
+            <div class="lesson_nav_img">
+                <img src="../static/img/scrambled.jpg">
+                <img src="../static/img/overeasy.jpg">
+                <img src="../static/img/boiledegg.jpg">
+                <img src="../static/img/poached.jpg">
+            </div>
+        </div>
+    <div class="main_container">
+        
+          
+            <div class="recipe">
+                <h2>Over easy eggs</h2>
+                <p>Making eggs over easy at home ensures you get an egg cooked just the way you like it. Over easy eggs are fried eggs that are flipped over to cook the top and envelope the yolk in egg white. The whites should be firm, while the unbroken yolk remains runny. The two most important things in the recipe are the eggs and the pan; whenever possible, choose fresh free-range, pasture-raised, or organic eggs, and make sure to pick a good quality nonstick skillet. Serve over easy eggs on buttered toast or alongside crispy home fries, with a side of bacon and grilled tomato.</p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SbOx5pkheFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <ol>Ingredients
+                    <li>2 teaspoons unsalted butter, or oil</li>
+                    <li>2 large egg</li>
+                    <li>Kosher salt, to taste</li>
+                    <li>Freshly ground black pepper, to taste</li>
+                    <li>Steps to Make It</li>
+                </ol>
+
+                <p>Melt the butter in a nonstick skillet over medium-low heat.</p>
+
+                <p>Melt the butter in the skillet.</p>
+
+                <p>Crack the egg into a small bowl or ramekin. When the butter is sizzling, slide the egg into the pan.</p>
+
+                <p>Add the egg to the pan.</p>
+
+                <p>Cook the egg until the bottom is firm enough to flip easily.</p>
+
+                <p>Slide a spatula under the egg and gently turn it over.</p>
+
+                <p>Let the egg cook for about 8 to 10 seconds longer.</p>
+
+                <p>Sprinkle the egg with salt and pepper.</p>
+
+                <p>Transfer it to a plate and enjoy.</p>
+
+                <form action="/upload/{{2}}" method="post" enctype="multipart/form-data">
+                    <input style="border: 1px solid black;" type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
+                    <input type="submit" value="Upload Image" name="submit">
+                </form>
+                
+            </div>
+    </div>
+            
+    </body>
+</html> 

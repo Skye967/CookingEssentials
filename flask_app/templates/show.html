@@ -1,0 +1,27 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    </head>
+    <body>
+            <h1>Show Display</h1>
+            {%for info in all_show_info%}
+            <p>{{info.title}}</p>
+            <p>{{info.network}}</p>
+            <p>{{info.release}}</p>
+            <p>{{info.description}}</p>
+            {%endfor%}
+            {%for username in fullname%}
+                <p>{{username.fname}}</p>
+                <p>{{username.lname}}</p>
+            {%endfor%}
+            <form action="/">
+                <input type="submit" value="tv shows">
+            </form>
+    </body>
+</html>

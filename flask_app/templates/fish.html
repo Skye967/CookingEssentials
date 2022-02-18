@@ -1,0 +1,80 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/dashboard.css">
+    </head>
+    <body>
+        <div class="dashboard_nav">
+            <h1 style="margin-left:20px;">Anyone Can Cook</h1>
+            <div class="dashboard_nav_img">
+            </div>
+            <form style="margin-right:20px;" action="/index">
+                <input class="btn btn-primary" type="submit" value = "Dashboard">
+            </form>
+            <form style="margin-right:20px;" action="/log_out">
+                <input class="btn btn-warning" type="submit" value = "log out">
+            </form>
+        </div>
+        <div class="lesson_nav">
+            <div class="lesson_links">
+                <h3>Meat Lessons</h3>
+                <a href="/meat/chicken">Chicken</a>
+                <a href="/meat/steak">Steak</a>
+                <a href="/meat/pork">Pork</a>
+                <a href="/meat/fish">Fish</a>
+            </div>
+            <div class="lesson_nav_img">
+                <img src="../static/img/chickendinner.jpg">
+                <img src="../static/img/steakdinner.jpg">
+                <img src="../static/img/porkdinner.jpg">
+                <img src="../static/img/fishdinner.jpg">
+            </div>
+        </div>
+    <div class="main_container">
+        <div class="recipe">
+            <h2>Fish</h2>
+            
+            
+            <p>Crispy Pan Fried Fish
+
+ 
+            <p>Pan Fried Fish is a thing of beauty, with its beautiful crispy golden crust and juicy flesh inside. It’s a super quick dinner because cooking fish fillets on the stove takes less than 5 minutes!</p>
+
+            <p>Wondering how to stop fish sticking to the pan? It’s easy: use a heavy based skillet (doesn’t need to be non stick), heat the pan before adding oil, and most importantly – do not move move the fish until it naturally releases from the pan!</p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/r5nZnDuhxv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+            <p>How to cook fish on the stove – perfectly every time!</p>
+            <p>1. Use a heavy duty skillet – it DOES NOT need to be a non stick pan! Contrary to popular belief, it’s not just about using a non stick pan. A thin, cheap non stick pan will cause the fish to be in closer and harsher contact with the stove, causing the fish to brown unevenly in the few minutes it’s on the stove. Some crispy patches, some not so crispy ones.</p>
+
+            <p>2. Heat the pan first before adding the oil – I have NEVER had problems with fish sticking to the pan since I adopted this technique. It’s just an easy way to ensure the oil is hot enough but not too hot (a common mistake people make). To do this, just heat a dry pan, and as soon as you see small wisps of smoke, add oil, swirl to coat base, then immediately add the fish.</p>
+
+            <p>3. Pat fish dry – dry fish = crispier surface. Especially important for thawed frozen fish.</p>
+
+            <p>4. Shake off excess flour – coat well in flour but vigorously shake off excess (too much flour = crispy crust falls off)</p>
+
+            <p>5. Do not move until it releases naturally – Most fish fillets will initially stick to the pan as they start to cook (unless you’re using so much oil you’re basically shallow frying them). But it naturally releases once the surface is cooked and golden.</p>
+
+            <p>6. So give it a nudge, and if it doesn’t want to move, then it means that it’s not ready. So just leave it and try again in another 15 seconds or so!</p>
+
+            <p>7. Transfer to plate to cool, then enjoy!</p>
+
+            
+
+            <form action="/upload/{{9}}" method="post" enctype="multipart/form-data">
+                    <input style="border: 1px solid black;" type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
+                    <input type="submit" value="Upload Image" name="submit">
+                </form>
+                        
+         </div>
+    </div>
+            
+    </body>
+</html> 

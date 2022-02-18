@@ -1,0 +1,68 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/dashboard.css">
+    </head>
+    <body>
+        <div class="dashboard_nav">
+            <h1 style="margin-left:20px;">Anyone Can Cook</h1>
+            <div class="dashboard_nav_img">
+            </div>
+            <form style="margin-right:20px;" action="/log_out">
+            <input class="btn btn-warning" type="submit" value = "log out">
+            </form>
+        </div>
+        
+        <div class="dashboard_container">
+            <div class="container1">
+                <div class="row1">
+                    <div>
+                        <a href="/egg"><img src="../static/img/egg.jpg"></a>
+                        <h5>Egg Mastery</h5>
+                        <p>{{eggcompleted}} Completed</p>
+                    </div>
+                    <div>
+                        <a href="/pancake"><img src="../static/img/thepancake.jpg"></a>
+                        <h5>Pancake essentials</h5>
+                        <p>{{pancakecompleted}} Completed</p>
+                    </div>
+                    <div>
+                        <a href="/meat"><img src="../static/img/themeat.png"></a>
+                        <h5>Meat Basics</h5>
+                        <p>{{meatscompleted}} Completed</p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div>
+                        <a href="/starch"><img src="../static/img/rice.png"></a>
+                        <h5>Starch Fundementals</h5>
+                        <p>{{starchescompleted}} Completed</p>
+                    </div>
+                    <div>
+                        <a href="/vegetable"><img src="../static/img/theveggie.png"></a>
+                        <h5>Vegetable Necessity</h5>
+                        <p>{{vegcompleted}} Completed</p>
+                    </div>
+                    <div>
+                        <a href="/saucey"><img src="../static/img/thesauce.png"></a>
+                        <h5>Saucey Finish</h5>
+                        <p>{{saucescompleted}} Completed</p>
+                    </div>
+                </div>
+                <div class="upload_image_container">
+                    {%for image in all_images%}
+                        <img style="object-fit: contain; height: 200px;width: 200px; margin: 20px;" src ="{{image['picture']}}">
+                    {%endfor%}
+                    
+                </div>
+            </div>
+        </div>
+            
+    </body>
+</html> 

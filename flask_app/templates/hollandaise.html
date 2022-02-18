@@ -1,0 +1,73 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/dashboard.css">
+    </head>
+    <body>
+        <div class="dashboard_nav">
+            <h1 style="margin-left:20px;">Anyone Can Cook</h1>
+            <div class="dashboard_nav_img">
+            </div>
+            <form style="margin-right:20px;" action="/index">
+                <input class="btn btn-primary" type="submit" value = "Dashboard">
+            </form>
+            <form style="margin-right:20px;" action="/log_out">
+                <input class="btn btn-warning" type="submit" value = "log out">
+            </form>
+        </div>
+        <div class="lesson_nav">
+            <div class="lesson_links">
+                <h3>Sauce Lessons</h3>
+                <a href="/saucey/veloute">Veloute</a>
+                <a href="/saucey/pansauce">Pan butter sauce</a>
+                <a href="/saucey/tomotoe">Tomatoe</a>
+                <a href="/saucey/balsamic">Balsamic reduction</a>
+                <a href="/saucey/hollandaise">Hollandaise</a>
+            </div>
+            <div class="lesson_nav_img">
+                <img src="../static/img/sauce1.jpg">
+                <img src="../static/img/sauce2.jpg">
+                <img src="../static/img/sauce3.jpg">
+                <img src="../static/img/sauce4.jpg">
+                <img src="../static/img/sauce5.jpg">
+            </div>
+        </div>
+    <div class="main_container">
+            <div class="recipe">
+                <h2>Hollandaise</h2>
+
+                <p>The easiest way to get perfect Hollandaise sauce is to use a blender. This recipe has all the same ingredients as the classic, but no double boiler and no chance of the sauce separating. I love the lemony flavor on fresh steamed asparagus!</p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mdcJ6QvUukU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Blender Hollandaise Sauce</p>
+
+                                <p>Recipe Summary</p>
+                <p>Prep: 5 mins</p>
+                <p>Total: 5 mins</p>
+                <p>Servings: 6</p>
+                <p>Yield: 6 servins</p>
+
+                <p>Ingredient Checklist</p>
+                <p>3 egg yolks </p>
+                <p>1 tablespoon lemon juice</p>
+                <p>½ cup butter</p>
+
+                <p>1. In the container of a blender, combine the egg yolks, mustard, lemon juice and hot pepper sauce. Cover, and blend for about 5 seconds.</p>
+
+                <p>2. Place the butter in a glass measuring cup. Heat butter in the microwave for about 1 minute, or until completely melted and hot. Set the blender on high speed, and pour the butter into the egg yolk mixture in a thin stream. It should thicken almost immediately. Keep the sauce warm until serving by placing the blender container in a pan of hot tap water.</p>
+
+                <form action="/upload/{{19}}" method="post" enctype="multipart/form-data">
+                    <input style="border: 1px solid black;" type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
+                    <input type="submit" value="Upload Image" name="submit">
+                </form>
+            </div>
+    </div>
+            
+    </body>
+</html> 

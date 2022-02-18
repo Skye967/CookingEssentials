@@ -1,0 +1,128 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
+    <body>
+    <div class="header">
+        <h1>You Suck At Cooking</h1>
+        <p style="font-style: italic;">"Follow our simple cooking cirriculum that will change your life for the better" </p>
+    </div>
+    <div class="main_container">
+        <div class="side_nav">
+            <h1>Cooking skills everyone should know</h1>
+            <img src="../static/img/omlette.jpg">
+            <h4>1. Egg mastery</h4>
+            <p>Cooking transforms no other food as dramatically as an egg. Whether you prefer them hard-cooked, poached, fried, or scrambled, knowing how eggs go from raw to cooked can help you perfect your technique.</p>
+            <img src="../static/img/pancake.jpg">
+            <h4>2. Pancake essiantials</h4>
+            <p>Through all the breakfast fads, pancakes stand resolute, the definitive breakfast dish, something almost everyone loves and all of us should master. Eggy, salty and just this side of sweet. There may have been struggles with burned bottoms and raw interiors in your past, but with a well-made batter and some practice with your stove, you can achieve pancake perfection.</p>
+            <img src="../static/img/mail-order-meat-beef-1585852720.jpg">
+            <h4>3. Meat Basics</h4>
+            <p>So what exactly gives meat its flavor and makes us beg for more? It’s that blissful mixture of protein and fat. But what’s so special about bacon and steak that, for most people, it trumps the growing pile of scientific data on meat’s detrimental health effects. The answer, according to scientists, lies in meat’s unique mixture of fat and umami and as much as 95 percent of what we think of as meat’s taste is actually its aroma. Roasting, grilling and stewing is just to appealing.</p>
+            <img src="../static/img/pasta-rice-potatoes.jpg">
+            <h4>4. Making a starch to go with your meal</h4>
+            <p>Choosing what to plate alongside a Protein is a big decision, but don't stress about it too much. A good rule of thumb for any Protein is to lighten up your sides and choose flavors that go well with the robust or smoky flavors of the crown jewel. For your starch element, go for a simple baked or smashed potato. Rice pilaf or Pasta may also be considered if you want to incorporate a Starch.</p>
+            <img src="../static/img/veggies.jpg">
+            <h4>5. A Good Vegetable</h4>
+            <p>Sometimes we do crave fresh food and vegetables like kale or broccoli. Many times this desire for fresh ingredients appears when your body needs more Vitamin C, calcium, iron or magnesium. "If you begin to crave fruits and vegetables, then indulge away!" Also it aides in the digestion of meat.</p>
+            <img src="../static/img/sauces.jpg">
+            <h4>6. Saucey Finish</h4>
+            <p>Mastering the art of sauce making can instantly up your cooking game, helping you elevate basic foods into complex, vibrant-tasting meals. With sauce on your side, you can turn a bland heap of boiled noodles into rich spaghetti bolognese. You can change a humble pile of romaine lettuce and grated Parmesan into a creamy Caesar salad. You can make an unassuming handful of tortilla chips into zesty nachos.</p>
+        </div>
+        <div class = "container">
+            <h1>Registration</h1>
+            <form action="/registration" method = "POST">
+                <label for="firstname"> First Name</label> 
+                    {% with messages = get_flashed_messages() %}  
+                    {% if messages %}                            
+                        {% for message in messages %} 
+                            {%if message == "Invalid first name!"%}           
+                                <p style="color: red;">{{message}}</p>
+                            {%endif%}                   
+                        {% endfor %}
+                    {% endif %}
+                    {% endwith %}                             
+                <input type="text" class="form-control" name="firstname">
+                <label for="lastname"> Last Name</label>
+                    {% with messages = get_flashed_messages() %}  
+                    {% if messages %}                            
+                        {% for message in messages %} 
+                            {%if message == "Invalid last name!"%}           
+                                <p style="color: red;">{{message}}</p>
+                            {%endif%}                   
+                        {% endfor %}
+                    {% endif %}
+                    {% endwith %}                    
+                <input class="form-control" type="text" name="lastname">
+                <label for="email">Email</label>
+                    {% with messages = get_flashed_messages() %}  
+                    {% if messages %}                            
+                        {% for message in messages %} 
+                            {%if message == "Invalid email address!"%}           
+                                <p style="color: red;">{{message}}</p>
+                            {%endif%}                   
+                        {% endfor %}
+                    {% endif %}
+                    {% endwith %}
+                <input class="form-control" type="text" name="email_name">
+                <label for="p_word"> Password</label>
+                    {% with messages = get_flashed_messages() %}  
+                    {% if messages %}                            
+                        {% for message in messages %} 
+                            {%if message == "invalid password!"%}           
+                                <p style="color: red;">{{message}}</p>
+                            {%endif%}                   
+                        {% endfor %}
+                    {% endif %}
+                    {% endwith %}                             
+                <input class="form-control" type="password" name="p_word">
+                <label for="password_confirmation"> Confirmation </label>  
+                    {% with messages = get_flashed_messages() %}  
+                    {% if messages %}                            
+                        {% for message in messages %} 
+                            {%if message == "invalid password confirmation!"%}           
+                                <p style="color: red;">{{message}}</p>
+                            {%endif%}                   
+                        {% endfor %}
+                    {% endif %}
+                    {% endwith %}
+                <input class="form-control" type="password" name="password_confirmation">
+                <input class="btn btn-info" value="Register" style="width: 100px;" type="submit" name="create">
+            </form>
+        </div>
+        <div class="container2">
+            <h1>Login</h1>
+            <form action="/login" method="POST">
+                {% with messages = get_flashed_messages() %}  
+                    {% if messages %}                            
+                        {% for message in messages %} 
+                            {%if message == "Invalid login or password!"%}           
+                                <p style="color: red;">{{message}}</p>
+                            {%endif%}                   
+                        {% endfor %}
+                    {% endif %}
+                    {% endwith %}
+                <label for="login"> Login</label>                              
+                <input class="form-control" type="text" name="login">
+                <label for="pass">Password</label>                              
+                <input class="form-control" type="password" name="pass">
+                <input class="btn btn-info" style="width: 100px;" type="submit" name="create" value="Login">
+            </form>
+            
+        </div>
+        
+    </div>
+        <div class="bottom_nav">
+            <img src="../static/img/download.jpg">
+            <img src="../static/img/cooking-fail.gif">
+            <img src="../static/img/iStock-932070526-1.jpg">
+        </div>
+    </body>
+</html>

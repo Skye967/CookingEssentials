@@ -1,0 +1,82 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/dashboard.css">
+    </head>
+    <body>
+        <div class="dashboard_nav">
+            <h1 style="margin-left:20px;">Anyone Can Cook</h1>
+            <div class="dashboard_nav_img">
+            </div>
+            <form style="margin-right:20px;" action="/index">
+                <input class="btn btn-primary" type="submit" value = "Dashboard">
+            </form>
+            <form style="margin-right:20px;" action="/log_out">
+                <input class="btn btn-warning" type="submit" value = "log out">
+            </form>
+        </div>
+        <div class="lesson_nav">
+            <div class="lesson_links">
+                <h3>Starch Lessons</h3>
+                <a href="/starch/potatoe">Potatoes</a>
+                <a href="/starch/rice">Rice</a>
+                <a href="/starch/pasta">Pasta</a>
+            </div>
+            <div class="lesson_nav_img">
+                <img src="../static/img/potatoe.jpg">
+                <img src="../static/img/rice.jpg">
+                <img src="../static/img/pasta.jpg">
+            </div>
+        </div>
+    <div class="main_container">
+            <div class="recipe">
+                <h2>Seasoned Rice</h2>
+
+                <p>Rice Side Dish for everything! Don’t get me wrong, plain rice has its place in this world. Doused with saucy stir fries, smothered in spicy curries. But you do need a sauce. So how do you make plain white rice so tasty, you will want to eat a meals’ worth straight out of the pot?? Cook it with stock powder/bouillon, some spices and add a good wack of butter!</p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dW9frgedbnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <p>Flavourings and spices for seasoned rice Here’s what goes in this seasoned rice. You can make this with any white rice other than speciality rices. Don’t worry if you don’t have all the spices, there are plenty of alternatives! Spices for rice to make it taste better</p>
+
+                <p>SUBSTITUTION FOR SPICES, You could skip one of the spices and it will still taste similar. Or you can substitute as follows:</p> 
+
+                <p>Garlic powder – melt 1 tbsp (15g) butter and cook 2 finely chopped garlic cloves until golden, then add rice, water and all other ingredients and cook per recipe;</p>
+                
+                <p>Onion powder – add extra 1/2 tsp garlic powder instead;</p>
+
+                <p>Paprika – just skip it, adds a touch of warm earthy flavour and a bit of colour, not critical;</p>
+
+                <p>Thyme – not critical. Best sub is dried oregano, followed by basil. 1/4 tsp sage powder is SO GOOD as well.</p>
+
+                <p>Parsley – optional, this is more for visual, to get the little green specks in the rice. Sub with basil, or stir through 1 cup finely sliced green onion, or 1/2 cup finely chopped fresh parsley or chives.</p>
+
+                <p>How to make seasoned rice</p>
+
+                <p>1. Place rice, water and all the seasonings into a large saucepan or small pot and give it a good stir;</p>
+
+                <p>2. Bring to a simmer over medium high heat until there’s bubbles around the edges and the entire surface is rippling, and it foams a bit (you’ll see in the video);</p>
+
+                <p>3. Place a tight fitting lid on, then turn down to medium low – or low for strong stoves. You want the water to still be simmering – if the heat is too low, then the rice just sits there in hot water, bloating, rather than absorbing. Too high, and it will bubble over and out the sides of the pot. NO PEEKING – the lid needs to stay on to trap the steam inside – this will ensure your rice cooks evenly;</p>
+
+                <p>After 13 minutes, remove from the stove and let it rest for 10 minutes – the rice will finish cooking during this time (if you try the rice as soon as it comes off the stove, you’ll find the surface of the grain is wet and the inside is still uncooked);</p>
+
+                <p>Add butter and fluff up the rice with a rubber spatula – the residual heat will melt the butter. I recommend using at least 3 tbsp (50g) for a lovely buttery rice, but you can reduce to 2 tbsp (30g) if you want. Or sub with extra virgin olive oil, or just skip the butter – it will still be very tasty rice!</p>
+
+                <p>Pile onto serving platter, sprinkle with parsley or something green for presentation if you wish. Dig in!</p>
+
+                <form action="/upload/{{11}}" method="post" enctype="multipart/form-data">
+                    <input style="border: 1px solid black;" type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
+                    <input type="submit" value="Upload Image" name="submit">
+                </form>
+               
+            </div>
+    </div>
+            
+    </body>
+</html> 

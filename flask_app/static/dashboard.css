@@ -1,0 +1,146 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.dashboard_nav {
+    display: flex;
+    position: sticky;
+    background-color: aquamarine;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+
+}
+
+.dashboard_nav img {
+    height: 150px;
+}
+
+.dashboard_nav_img {
+    font-size: 0;
+    width: 820px;
+    height: 150px;
+    background-image: url(img/chef.jpg), url(img/spread.jpg), url(img/meal.jpg), url(img/giphy.gif);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: left, 200px, 460px, 560px;
+    background-size: contain;
+}
+
+.container1 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 img {
+
+    height: 100px;
+    width: 100px;
+}
+
+.row1,
+.row2 {
+    display: flex;
+}
+
+.row1 div,
+.row2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgb(188, 233, 241);
+    margin: 5px;
+}
+
+.lesson_nav {
+    display: inline-block;
+    height: 1000px;
+    width: 250px;
+    background-color: aquamarine;
+}
+
+.lesson_links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;;
+}
+
+.lesson_links h3{
+    text-decoration: underline;
+}
+
+.lesson_links a {
+    margin: 10px 10px;
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(134, 114, 1);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+}
+
+.lesson_links a:hover {
+    background-color: rgb(84, 148, 185);
+    color: white;
+}
+
+.lesson_nav_img {
+    display: flex;
+    flex-direction: column;
+}
+
+.scrambledegg_recipe {
+    padding: 50px;
+}
+
+.lesson_nav_img img {
+    width: 250px;
+}
+
+.dashboard_container {
+    position: absolute;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.main_container {
+    position: absolute;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.egg_overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 700px;
+    padding: 50px;
+    margin-right: 50px;
+}
+
+.egg_overview div {
+    margin: 30px 0px;
+}
+
+.recipe {
+    padding: 50px;
+}

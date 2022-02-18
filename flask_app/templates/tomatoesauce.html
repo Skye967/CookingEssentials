@@ -1,0 +1,87 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/dashboard.css">
+    </head>
+    <body>
+        <div class="dashboard_nav">
+            <h1 style="margin-left:20px;">Anyone Can Cook</h1>
+            <div class="dashboard_nav_img">
+            </div>
+            <form style="margin-right:20px;" action="/index">
+                <input class="btn btn-primary" type="submit" value = "Dashboard">
+            </form>
+            <form style="margin-right:20px;" action="/log_out">
+                <input class="btn btn-warning" type="submit" value = "log out">
+            </form>
+        </div>
+        <div class="lesson_nav">
+            <div class="lesson_links">
+                <h3>Sauce Lessons</h3>
+                <a href="/saucey/veloute">Veloute</a>
+                <a href="/saucey/pansauce">Pan butter sauce</a>
+                <a href="/saucey/tomotoe">Tomatoe</a>
+                <a href="/saucey/balsamic">Balsamic reduction</a>
+                <a href="/saucey/hollandaise">Hollandaise</a>
+            </div>
+            <div class="lesson_nav_img">
+                <img src="../static/img/sauce1.jpg">
+                <img src="../static/img/sauce2.jpg">
+                <img src="../static/img/sauce3.jpg">
+                <img src="../static/img/sauce4.jpg">
+                <img src="../static/img/sauce5.jpg">
+            </div>
+        </div>
+    <div class="main_container">
+            <div class="recipe">
+                
+                <h2>Tomato Sauce</h2>
+                <p>A good tomato sauce is the foundation for so many wonderful dishes—pizza, pasta, chicken, and fish. Here is a recipe for a basic tomato sauce that starts with a soffritto of onions, carrots, and celery cooked in a little olive oil, to which garlic, tomatoes and seasonings are added. Simple and delicious! he sauce can be dressed up with mushrooms, sausage, olives, wine, and all manner of vegetables.</p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hwJMe7Zj9p4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <p>Basic Tomato Sauce</p>
+
+                <p>PREP TIME: 5 mins</p>
+                <p>COOK TIME: 35 mins</p>
+                <p>TOTAL TIME: 40 mins</p>
+                <p>Ingredients</p>
+                <p>2 tablespoons extra virgin olive oil</p>
+                <p>1/2 medium onion, finely chopped</p>
+                <p>1 small carrot or 1/2 large carrot, finely chopped</p>
+                <p>1 small stalk of celery, including the green tops, finely chopped</p>
+                <p>2 tablespoons chopped fresh parsley</p>
+                <p>1 clove garlic, minced</p>
+                <p>1/2 teaspoon dried basil or 2 tablespoons chopped fresh basil</p>
+                <p>1 (28 ounce) can whole tomatoes, including the juice, or 1 3/4 pound of fresh tomatoes, peeled, seeded, and chopped
+                1 teaspoon tomato paste</p>
+                <p>Salt and freshly ground black pepper to taste</p>
+
+                <p>Method</p>
+                <p>Gently cook the onion, carrot, celery, and parsley: Heat olive oil in a large wide skillet on medium heat. Add the chopped onion, carrot, celery and parsley. Stir to coat. Reduce the heat to low, cover the skillet and cook for 15 to 20 minutes, stirring occasionally until the vegetables are softened and cooked through.</p>
+
+                <p>Add garlic: Remove cover and add the minced garlic. Increase the heat to medium high. Cook for garlic for 30 seconds.</p>
+
+
+                <p>Add tomatoes, tomato paste, basil, salt, pepper, then simmer: Add the tomatoes, including the juice and shredding them with your fingers if you are using canned whole tomatoes. Add the tomato paste and the basil. Season with salt and pepper to taste.</p>
+
+                <p>Bring to a low simmer, reduce the heat to low and cook, uncovered until thickened, about 15 minutes.</p>
+
+                <p>Optional, purée for smooth sauce: If you want you can push the sauce through a food mill, or purée it in a blender or with an immersion blender, to give it a smooth consistency.</p>
+
+                <form action="/upload/{{17}}" method="post" enctype="multipart/form-data">
+                    <input style="border: 1px solid black;" type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
+                    <input type="submit" value="Upload Image" name="submit">
+                </form>
+                                
+            </div>
+    </div>
+            
+    </body>
+</html> 

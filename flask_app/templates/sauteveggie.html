@@ -1,0 +1,73 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/dashboard.css">
+    </head>
+    <body>
+        <div class="dashboard_nav">
+            <h1 style="margin-left:20px;">Anyone Can Cook</h1>
+            <div class="dashboard_nav_img">
+            </div>
+            <form style="margin-right:20px;" action="/index">
+                <input class="btn btn-primary" type="submit" value = "Dashboard">
+            </form>
+            <form style="margin-right:20px;" action="/log_out">
+                <input class="btn btn-warning" type="submit" value = "log out">
+            </form>
+        </div>
+        <div class="lesson_nav">
+            <div class="lesson_links">
+                <h3>Vegetable Lessons</h3>
+                <a href="/vegetable/saute">Sauteed Veggies</a>
+                <a href="/vegetable/boil">Boiled Veggies</a>
+            </div>
+            <div class="lesson_nav_img">
+                <img src="../static/img/suateveggie.jpg">
+                <img src="../static/img/plateveggie.jpg">
+                <img src="../static/img/boiledveggie.jpg">
+            </div>
+        </div>
+    <div class="main_container">
+            <div class="recipe">
+                <h2>Sauteed Veggies</h2>
+
+                <p>Looking for a quick and easy side dish? Here’s the fastest way to get colorful veggies to jump onto your plate: the Ultimate Sautéed Vegetables recipe. The good old veggie saute is often done wrong: it’s super soggy, or completely bland in flavor. Think of that pile of limp zucchini and carrots you might eat at a wedding buffet. So why don’t we do a total makeover on the old veggie saute? These sauteed vegetables are beautifully colored, bursting with flavor and crisp tender in texture. They’re the perfect side dish you’ve never had. Ready to get started?</p>
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ulpn_iONXkg?start=73" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <p>How to sauté vegetables: the basics
+                Sautéing is hands down the fastest way to cook vegetables. The word comes from the French work “to jump,” meaning that you’ll need to keep stirring or flipping the pan for the entire cook time. To sauté you’ll need a good skillet and a fat to use for cooking, typically either olive oil or butter. Sauteing browns the outside of the food, which helps complex flavors to develop (called the Maillard reaction, the scientific term for browning food). Here are the basic steps for sauteeing vegetables, and the approximate timing for each type of vegetable:</p>
+
+                <p>Chop the vegetable into bite-sized pieces.</p>
+
+                <p>Add olive oil to a large skillet and heat it over medium high heat.</p>
+
+                <p>Add the veggies and cook until tender, stirring frequently. Use the following approximate</p> 
+                
+                <p>for better results, add the veggebles according to their cook time:</p>
+                <p>Frozen peas: ~2 minutes</p>
+                <p>Greens (kale, spinach): ~3 minutes</p>
+                <p>Mushrooms: ~7 minutes</p>
+                <p>Broccoli, asparagus: ~8 minutes</p>
+                <p>Cauliflower, onions: ~10 minutes</p>
+                <p>Bell peppers: ~10 to 12 minutes</p>
+                <p>Carrots: ~12 minutes</p>
+
+                <p>Now that they're all nice and perfectly tender, Enjoy!</p>
+
+                <form action="/upload/{{13}}" method="post" enctype="multipart/form-data">
+                    <input style="border: 1px solid black;" type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
+                    <input type="submit" value="Upload Image" name="submit">
+                </form>
+                
+            </div>
+    </div>
+            
+    </body>
+</html> 

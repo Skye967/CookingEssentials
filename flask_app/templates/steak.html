@@ -1,0 +1,104 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/dashboard.css">
+    </head>
+    <body>
+        <div class="dashboard_nav">
+            <h1 style="margin-left:20px;">Anyone Can Cook</h1>
+            <div class="dashboard_nav_img">
+            </div>
+            <form style="margin-right:20px;" action="/index">
+                <input class="btn btn-primary" type="submit" value = "Dashboard">
+            </form>
+            <form style="margin-right:20px;" action="/log_out">
+                <input class="btn btn-warning" type="submit" value = "log out">
+            </form>
+        </div>
+        <div class="lesson_nav">
+            <div class="lesson_links">
+                <h3>Meat Lessons</h3>
+                <a href="/meat/chicken">Chicken</a>
+                <a href="/meat/steak">Steak</a>
+                <a href="/meat/pork">Pork</a>
+                <a href="/meat/fish">Fish</a>
+            </div>
+            <div class="lesson_nav_img">
+                <img src="../static/img/chickendinner.jpg">
+                <img src="../static/img/steakdinner.jpg">
+                <img src="../static/img/porkdinner.jpg">
+                <img src="../static/img/fishdinner.jpg">
+            </div>
+        </div>
+    <div class="main_container">
+        <div class="recipe">
+            <h2>Steak</h2>
+
+            <p>Pan searing a beautiful steak is wayyy easier than you'd think. Follow our easy tips below and you'll become a pro in no time.</p>
+            
+            <p>Pan searing a beautiful steak is wayyy easier than you'd think. Follow our easy tips below and you'll become a pro in no time.</p>
+
+            <p>1. Use a THICK cut of steak. </p>
+
+            <p>You want something at least 1 inch—1 ½ is even better! The Delish test kitchen prefers boneless ribeye steak because of all the marbled fat. (I’m drooling just thinking of it.) But New York strip steak is another great option.</p>
+
+            <p>If you want to do something thinner like a flank or skirt steak, you’ll need to reduce the amount of time per side. Depending on thickness, it could be as quick as 3 minutes per side. </p>
+
+            <p>2. Dry them off. </p>
+
+            <p>I know it sounds weird, but for a really good crust sear, you want your steak dry as hell. Just pat the steaks with paper towels before you add them to the pan. </p>
+
+            <p>*EXTRA CREDIT: Season the steak with salt the night before and let it rest (uncovered) in the fridge overnight. It’s the best way to draw out moisture. Plus, the interior meat will be much more flavorful. </p>
+
+            <p>3. Don’t be afraid of salt. </p>
+
+            <p>Salt leads to flavor. Never forget that. You want the the surface of each side to be covered in Kosher salt. </p>
+
+            <p>4. Get the pan HOT. </p>
+
+            <p>Only when the oil is shimmering and just about to smoke are you allowed to add the steak.</p> 
+
+            <p>5. Let it rest.</p> 
+
+            <p>You’ve heard it a thousand times before, but it is always worth repeating. Before you cut into that beautiful hunk of meat, let it hang out for at least 10 minutes. You don’t want to lose all of those amazing juices. </p><br>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xOc2LwR2gzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+            
+            
+
+            <p>Have you made this? Let us know how it went in the comment section below!</p>
+
+            <p>YIELDS: 1 SERVING</p>
+            <p>PREP TIME: 0 HOURS 5 MINS</p>
+            <p>TOTAL TIME: 0 HOURS 20 MINS</p>
+            <p>INGREDIENTS</p>
+            <p>2 tbsp. extra-virgin olive oil</p>
+            <p>Boneless ribeye steak</p>
+            <p>Kosher salt</p>
+            <p>Freshly ground black pepper</p>
+            <p>2 tbsp. butter<p>
+
+            <p>DIRECTIONS</p>
+            <p>In a medium skillet over medium-high heat, heat oil.</p>
+            <p>Season steak with salt and pepper on both sides.</p>
+            <p> When oil is just about to smoke, add steak. </p>
+            <p>Cook 7 minutes, then flip and add butter. Baste with butter and cook another 5 minutes or until internal temperature reaches 140°, for medium.</p>
+            <p>Remove from pan and let rest 5 minutes before cutting.</p>
+            <p>TEMPERATURE CHEAT SHEET: Medium-rare: 130°-135°, Medium: 135°-145°, Medium-well:145-155°</p>
+            
+            <form action="/upload/{{7}}" method="post" enctype="multipart/form-data">
+                    <input style="border: 1px solid black;" type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
+                    <input type="submit" value="Upload Image" name="submit">
+                </form>
+
+         </div>
+    </div>
+            
+    </body>
+</html> 

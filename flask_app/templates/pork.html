@@ -1,0 +1,90 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/dashboard.css">
+    </head>
+    <body>
+        <div class="dashboard_nav">
+            <h1 style="margin-left:20px;">Anyone Can Cook</h1>
+            <div class="dashboard_nav_img">
+            </div>
+            <form style="margin-right:20px;" action="/index">
+                <input class="btn btn-primary" type="submit" value = "Dashboard">
+            </form>
+            <form style="margin-right:20px;" action="/log_out">
+                <input class="btn btn-warning" type="submit" value = "log out">
+            </form>
+        </div>
+        <div class="lesson_nav">
+            <div class="lesson_links">
+                <h3>Meat Lessons</h3>
+                <a href="/meat/chicken">Chicken</a>
+                <a href="/meat/steak">Steak</a>
+                <a href="/meat/pork">Pork</a>
+                <a href="/meat/fish">Fish</a>
+            </div>
+            <div class="lesson_nav_img">
+                <img src="../static/img/chickendinner.jpg">
+                <img src="../static/img/steakdinner.jpg">
+                <img src="../static/img/porkdinner.jpg">
+                <img src="../static/img/fishdinner.jpg">
+            </div>
+        </div>
+    <div class="main_container">
+        <div class="recipe">
+            <h2>Pork</h2>
+
+            <p>Pork doesn’t have one especially important taste molecule. But what it does have is an almost miraculous combination of factors work which combine to make the salty goodness so many of us love.
+
+            <p>Some of those factors are obvious, like the smoky, cured pork belly itself. The proportion of fat in the pork belly is important too. But it’s what happens when the pork belly fat breaks down that’s really important.</p>
+
+            <p>“The cell membranes of the muscle tissue contain fatty acids that disintegrate during cooking to yield a bouquet of flavourful compounds like aldehydes, furans, and ketones. By themselves, some of these molecules have distinct tastes or smells — furans have a sweet, nutty, caramel-like note, aldehydes a green, grassy note, and ketones tend to be buttery — but whatever they are doing together seems to be key.”</p>
+
+            <p>In summary, Pork goodness is all about harmony. If any of those “flavorful compounds” are missing, it just won’t be right.</p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9GsUuZqWsqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <p>Pan Fried Pork Chops</p>
+
+            <p>Total: 25 min</p>
+            <p>Yield: 8 servings</p>
+
+            <p>Ingredients</p>
+
+            <p>1 teaspoon seasoned salt, plus more for seasoning</p>
+
+            <p>1 teaspoon ground black pepper, plus more for seasoning</p>
+
+            <p>8 pork breakfast chops</p>
+
+            <p>1 cup all-purpose flour</p>
+
+            <p>Cayenne pepper</p>
+
+            <p>1/2 cup canola oil</p>
+
+            <p> 1 tablespoon butter</p>
+
+            <p>Directions</p>
+
+            <P>Salt and pepper both sides of the pork chops.</p>
+            <p>Combine the flour and some cayenne, salt and black pepper. Dredge each side of the pork chops in the flour mixture, and then set aside on a plate.</p>
+            <p>Heat the canola oil over medium to medium-high heat. Add the butter. When the butter is melted and the butter/oil mixture is hot, cook 3 pork chops at a time, 2 to 3 minutes on the first side.</p>
+            <p>Flip and cook until the chops are golden brown on the other side, 1 to 2 minutes (make sure no pink juices remain). Remove to a plate and repeat with the remaining pork chops.</p>
+
+            <form action="/upload/{{8}}" method="post" enctype="multipart/form-data">
+                    <input style="border: 1px solid black;" type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
+                    <input type="submit" value="Upload Image" name="submit">
+                </form>
+                        
+         </div>
+    </div>
+            
+    </body>
+</html> 
