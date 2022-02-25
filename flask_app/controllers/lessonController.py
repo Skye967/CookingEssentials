@@ -2,6 +2,7 @@ from flask import render_template, redirect, request, session, flash, url_for
 from flask_app import app
 import os
 from ..models.User import User
+from ..models.LessonRetriverUtil import Lesson
 from flask_app.config.my_sequal_connections import connectToMySQL
 from flask_bcrypt import Bcrypt
 bcrypt = Bcrypt(app)

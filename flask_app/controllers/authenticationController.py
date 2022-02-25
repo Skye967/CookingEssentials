@@ -61,7 +61,6 @@ def enter_email():
     }
     user_id = User.add_email(data)
     session['user_id'] = user_id
-    display = User.display_emails()
     return redirect("/index")
 
 if __name__ == "__main__":

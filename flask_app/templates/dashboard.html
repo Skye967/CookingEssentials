@@ -57,7 +57,7 @@
                 </div>
                 <div class="upload_image_container">
                     {%for image in all_images%}
-                        <img style="object-fit: contain; height: 200px;width: 200px; margin: 20px;" src ="{{image['picture']}}">
+                            <img  id="myFood" class="myFood{{image['id']}}" onclick="foodImageZoom({{image['id']}})"  style="object-fit: contain; height: 200px;width: 200px; margin: 20px; transform: scale(1)" src ="{{image['picture']}}">
                     {%endfor%}
                     
                 </div>
@@ -65,4 +65,5 @@
         </div>
             
     </body>
+    <script src="../static/JS/index.js"></script>
 </html> 
